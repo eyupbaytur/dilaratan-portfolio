@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
-const Navbar = () => {
+export default function Navbar() {
     return (
         <div className='fixed w-full h-20 z-[100] text-base font-oswaldfont'>
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
@@ -47,5 +47,3 @@ const Navbar = () => {
         </div>
     )
 };
-
-export default Navbar
