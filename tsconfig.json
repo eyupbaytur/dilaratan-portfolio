@@ -14,8 +14,9 @@
     "incremental": true,
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/navbar.tsx"],
+  "exclude": ["node_modules"],
 }
