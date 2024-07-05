@@ -24,8 +24,8 @@ export default function Navbar() {
                     <Link href='/contact'>
                         <li className='ml-10 '>CONTACT</li>
                     </Link>
-                    <Link className='ml-10 ' target="_blank" href='https://www.instagram.com/dilaratan0/'>
-                        <li className=''><Image src="/assets/instagram-logo.png" alt="" objectPosition='bottom' height={25} width={25}/></li>
+                    <Link className='ml-10 relative h-6 w-6' target="_blank" href='https://www.instagram.com/dilaratan0/'>
+                        <li className=''><Image src="/assets/instagram-logo.png" alt="" objectPosition='bottom' fill/></li>
                     </Link>
                 </ul>
                 <div className='md:hidden'>
