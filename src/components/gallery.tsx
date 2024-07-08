@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Gallery() {
     return (
-            <div className="grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-14 p-10 md:p-20">
+            <div className="grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-14 py-10 md:py-14 px-10 md:px-20">
                 <div className="grid-flow-row ">
                     <Image className="h-auto max-w-full mb-3 md:mb-14" src="/assets/portfolio-images/1.jpg"loading='lazy' style={{ width: '100%', height: 'auto' }} sizes="100vw" width={0} height={0} quality={75} alt=""/>
 
