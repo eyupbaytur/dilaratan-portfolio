@@ -5,7 +5,7 @@ import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 export default function Navbar() {
     return (
-        <div className='sticky w-full h-20 z-[100] text-base font-oswaldfont px-10 md:px-20'>
+        <div className='sticky w-full h-20 z-[100] text-base font-oswaldfont px-10 md:px-20 py-10 md:py-14'>
             <div className='flex justify-between items-center w-full h-full'>
                 <Link href='/#Home'>
                     <ul className=' text-base uppercase '>DILARA TAN</ul>
