@@ -8,8 +8,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Dilara Tan Portfolio</title>
-        <meta property="og:title" content="Dilara Tan | Portfolio" />
-        <meta name="description" content="Connect with me!" />
+        <meta property="og:title" content="PORTFOLIO | Dilara Tan" />
         <meta property="og:image" content="/assets/og-image.png" />
         <link rel="icon" href="/favicon.ico"/>
       </Head>
