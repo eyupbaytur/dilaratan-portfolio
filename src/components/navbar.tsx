@@ -45,7 +45,7 @@ export default function Navbar() {
                                 </Link>
                             </div>
                         </div>
-                        <div className='text-center flex justify-center m-[50%] text-gray-800'>
+                        <div className='text-center justify-center top-[25%] bottom-[25%] left-[25%] right-[25%] fixed text-gray-800'>
                             <ul className='text-4xl'>
                                 <Link href='/portfolio'>
                                     <li className='mb-3'>PORTFOLIO</li>
