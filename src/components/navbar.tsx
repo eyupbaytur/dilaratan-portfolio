@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import Hamburger from '@/components/hamburger';
 
 export default function Navbar() {
     return (
@@ -28,25 +29,25 @@ export default function Navbar() {
                         <li className=''><Image src="/assets/instagram-logo.png" alt="" objectPosition='bottom' fill/></li>
                     </Link>
                 </ul>
-                <div className='md:hidden'>
-                    <AiOutlineMenu size={25}/>
+                <div className='md:hidden cursor-pointer'>
+                    <Hamburger/>
                 </div>
             </div>
-            <div className='fixed md:hidden left-0 top-0 w-full h-screen bg-black/70'>
+            <div className='md:hidden left-0 top-0 w-full h-screen bg-black/70'>
                 <div className='fixed left-0 top-0 w-[100%] sm:w-[100%] md:w-[45%] h-screen bg-[#ffffff] p-10 ease-in duration-500'>
                     <div className=''>
                         <div className='flex w-full items-center justify-between'>
-                            <div className='cursor-pointer'>
-                                <AiOutlineClose/>
-                            </div>
                             <div>
                                 <Link href='/#Home'>
                                     <ul className='text-gray-800 text-base uppercase '>DILARA TAN</ul>
                                 </Link>
                             </div>
+                            <div className='cursor-pointer'>
+                                <Hamburger/>
+                            </div>
                         </div>
-                        <div className='text-center justify-center top-[25%] bottom-[25%] left-[25%] right-[25%] fixed text-gray-800'>
-                            <ul className='text-4xl'>
+                        <div className='justify-center top-[25%] bottom-[25%] left-[25%] right-[25%] fixed text-gray-800'>
+                            <ul className='text-4xl text-center uppercase'>
                                 <Link href='/portfolio'>
                                     <li className='mb-3'>PORTFOLIO</li>
                                 </Link>
@@ -57,7 +58,7 @@ export default function Navbar() {
                                     <li className='mb-3'>ABOUT</li>
                                 </Link>
                                 <Link href='/contact'>
-                                    <li className='mb-10'>CONTACT</li>
+                                    <li className=''>CONTACT</li>
                                 </Link>
                             </ul>
                         </div>
