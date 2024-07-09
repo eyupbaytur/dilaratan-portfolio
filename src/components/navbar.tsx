@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import Hamburger from '@/components/hamburger';
 
 export default function Navbar() {
