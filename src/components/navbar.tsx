@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Hamburger from '@/components/hamburger';
 import { useState } from 'react';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -37,13 +38,13 @@ export default function Navbar() {
                         </Link>
                     </ul>
                     <div onClick={handleNav} className='md:hidden cursor-pointer'>
-                        <Hamburger/>
+                        <AiOutlineMenu size={25}/>
                     </div>
                 </div>
             </div>
             <div className={
                 menuOpen
-                ? 'fixed m:hidden left-0 top-0 w-full h-screen'
+                ? 'fixed md:hidden left-0 top-0 w-full h-screen'
                 : 'hidden'
                 }>
                 <div className='fixed md:hidden left-0 top-0 w-[100%] sm:w-[100%] md:w-[45%] h-screen bg-[#ffffff] p-10 ease-in duration-500'>
@@ -55,7 +56,7 @@ export default function Navbar() {
                                 </Link>
                             </div>
                             <div onClick={handleNav} className='cursor-pointer'>
-                                <Hamburger/>
+                                <AiOutlineClose size={25}/>
                             </div>
                         </div>
                         <div className='justify-center top-[25%] bottom-[25%] left-[25%] right-[25%] fixed text-gray-800'>
