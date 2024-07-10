@@ -2,9 +2,15 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Hamburger from '@/components/hamburger';
-import dynamic from 'next/dynamic'
+import { useState } from 'react';
 
 export default function Navbar() {
+    const [menuOpen, setMenuOpen] = useState(false)
+
+    const handleNav = () => {
+        setMenuOpen(!menuOpen);
+    }
+
     return (
         <div className='sticky w-full h-20 z-[100] text-base text-gray-800 font-oswaldfont px-10 md:px-20 py-10 md:py-14'>
             <div>
@@ -30,13 +36,17 @@ export default function Navbar() {
                             <li className=''><Image src="/assets/instagram-logo.png" alt="" loading="eager" objectPosition='bottom' fill/></li>
                         </Link>
                     </ul>
-                    <div className='md:hidden cursor-pointer'>
+                    <div onClick={handleNav} className='md:hidden cursor-pointer'>
                         <Hamburger/>
                     </div>
                 </div>
             </div>
-            <div className='md:hidden left-0 top-0 w-full h-screen'>
-                <div className='hidden left-0 top-0 w-[100%] sm:w-[100%] md:w-[45%] h-screen bg-[#ffffff] p-10 ease-in duration-500'>
+            <div className={
+                menuOpen
+                ? 'fixed m:hidden left-0 top-0 w-full h-screen'
+                : 'hidden'
+                }>
+                <div className='fixed md:hidden left-0 top-0 w-[100%] sm:w-[100%] md:w-[45%] h-screen bg-[#ffffff] p-10 ease-in duration-500'>
                     <div className=''>
                         <div className='flex w-full items-center justify-between'>
                             <div>
@@ -44,7 +54,7 @@ export default function Navbar() {
                                     <ul className='text-gray-800 text-base uppercase '>DILARA TAN</ul>
                                 </Link>
                             </div>
-                            <div className='cursor-pointer'>
+                            <div onClick={handleNav} className='cursor-pointer'>
                                 <Hamburger/>
                             </div>
                         </div>

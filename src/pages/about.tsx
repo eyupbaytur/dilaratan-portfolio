@@ -1,5 +1,6 @@
 import React from "react"
 import Head from 'next/head';
+import Navbar from "@/components/navbar";
 
 export default function About() {
   return (
@@ -11,7 +12,7 @@ export default function About() {
         <link rel="icon" href="/favicon.ico"/>
       </Head>
       <div>
-        about
+        <div><Navbar/></div>
       </div>
     </div>
   )

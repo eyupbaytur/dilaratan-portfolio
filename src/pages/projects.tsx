@@ -1,6 +1,6 @@
 import React from "react"
 import Head from 'next/head';
-import Navi from '@/components/hamburger'
+import Navbar from "@/components/navbar";
 
 export default function Projects() {
   return (
@@ -12,7 +12,7 @@ export default function Projects() {
         <link rel="icon" href="/favicon.ico"/>
       </Head>
       <div>
-        projects
+        <div><Navbar/></div>
       </div>
     </div>
   )
