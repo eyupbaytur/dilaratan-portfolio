@@ -28,11 +28,11 @@ export default function Navbar() {
                         <Link href='/projects'>
                             <li className='ml-10 '>PROJECTS</li>
                         </Link>
+                        <Link href='/workshop'>
+                            <li className='ml-10 '>WORKSHOP</li>
+                        </Link>
                         <Link href='/about'>
                             <li className='ml-10 '>ABOUT</li>
-                        </Link>
-                        <Link href='/contact'>
-                            <li className='ml-10 '>CONTACT</li>
                         </Link>
                         <Link className='ml-10 relative h-6 w-6' target="_blank" href='https://www.instagram.com/dilaratan0/'>
                             <li className=''><Image src={InstagramLogo} alt="" loading="eager" objectPosition='bottom' sizes="20vw" quality={100} fill/></li>
@@ -68,11 +68,11 @@ export default function Navbar() {
                                 <Link href='/projects'>
                                     <li className='mb-3'>PROJECTS</li>
                                 </Link>
-                                <Link href='/about'>
-                                    <li className='mb-3'>ABOUT</li>
+                                <Link href='/workshop'>
+                                    <li className='mb-3'>WORKSHOP</li>
                                 </Link>
-                                <Link href='/contact'>
-                                    <li className=''>CONTACT</li>
+                                <Link href='/about'>
+                                    <li className=''>ABOUT</li>
                                 </Link>
                             </ul>
                         </div>
