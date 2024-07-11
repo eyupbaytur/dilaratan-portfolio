@@ -15,6 +15,10 @@
     "paths": {
       "@/*": ["./src/*"]
     },
+    "types": [
+      "node",
+      "webpack-env" // here
+    ]
   },
 
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/navbar.tsx"],

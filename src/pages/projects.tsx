@@ -1,6 +1,7 @@
 import React from "react"
 import Head from 'next/head';
 import Navbar from "@/components/navbar";
+import ProjectsGallery from "@/components/projectsGallery";
 
 export default function Projects() {
   return (
@@ -13,6 +14,7 @@ export default function Projects() {
       </Head>
       <div>
         <div><Navbar/></div>
+        <div><ProjectsGallery/></div>
       </div>
     </div>
   )

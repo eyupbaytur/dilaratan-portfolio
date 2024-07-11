@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Hamburger from '@/components/hamburger';
 import { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import InstagramLogo from "../../public/assets/instagram-logo.png";
 
 export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -34,7 +35,7 @@ export default function Navbar() {
                             <li className='ml-10 '>CONTACT</li>
                         </Link>
                         <Link className='ml-10 relative h-6 w-6' target="_blank" href='https://www.instagram.com/dilaratan0/'>
-                            <li className=''><Image src="/assets/instagram-logo.png" alt="" loading="eager" objectPosition='bottom' fill/></li>
+                            <li className=''><Image src={InstagramLogo} alt="" loading="eager" objectPosition='bottom' sizes="20vw" quality={100} fill/></li>
                         </Link>
                     </ul>
                     <div onClick={handleNav} className='md:hidden cursor-pointer'>
@@ -77,7 +78,7 @@ export default function Navbar() {
                         </div>
                         <div className='fixed left-0 bottom-10 w-full'>
                             <Link className='justify-center flex' target="_blank" href='https://www.instagram.com/dilaratan0/'>
-                                <Image src="/assets/instagram-logo.png" alt="" height={30} width={30}/>
+                                <Image src={InstagramLogo} alt="" height={30} width={30} sizes="20vw" quality={100}/>
                             </Link>
                         </div>
                     </div>

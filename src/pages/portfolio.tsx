@@ -1,5 +1,5 @@
 import Navbar from "@/components/navbar"
-import Gallery from "@/components/gallery"
+import PortfolioGallery from "@/components/portfolioGallery"
 import React from "react"
 import Head from 'next/head';
 
@@ -14,7 +14,7 @@ export default function Portfolio() {
       </Head>
       <div>
         <div><Navbar/></div>
-        <div><Gallery/></div>
+        <div><PortfolioGallery/></div>
       </div>
     </div>
   )
