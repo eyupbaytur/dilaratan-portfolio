@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import Hamburger from '@/components/hamburger';
 import { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
@@ -13,6 +14,9 @@ export default function Navbar() {
         setMenuOpen(!menuOpen);
     }
 
+    const router = useRouter();
+    const currentPath = router.pathname;
+
     return (
         <div className='sticky w-full h-20 z-[100] text-base text-gray-800 font-oswaldfont px-10 md:px-20 py-10 md:py-14'>
             <div>
@@ -23,16 +27,16 @@ export default function Navbar() {
                 <div className='text-base uppercase flex justify-between items-center '>
                     <ul className='hidden md:flex '>
                         <Link href='/portfolio'>
-                            <li className=''>PORTFOLIO</li>
+                            <li className={currentPath === "/portfolio" ? 'underline' : ''}>PORTFOLIO</li>
                         </Link>
                         <Link href='/projects'>
-                            <li className='ml-10 '>PROJECTS</li>
+                            <li className={currentPath === "/projects" ? 'underline ml-10' : 'ml-10'}>PROJECTS</li>
                         </Link>
                         <Link href='/workshop'>
-                            <li className='ml-10 '>WORKSHOP</li>
+                            <li className={currentPath === "/workshop" ? 'underline ml-10' : 'ml-10'}>WORKSHOP</li>
                         </Link>
                         <Link href='/about'>
-                            <li className='ml-10 '>ABOUT</li>
+                            <li className={currentPath === "/about" ? 'underline ml-10' : 'ml-10'}>ABOUT</li>
                         </Link>
                         <Link className='ml-10 relative h-6 w-6' target="_blank" href='https://www.instagram.com/dilaratan0/'>
                             <li className=''><Image src={InstagramLogo} alt="" loading="eager" objectPosition='bottom' sizes="20vw" quality={100} fill/></li>
@@ -63,16 +67,16 @@ export default function Navbar() {
                         <div className='justify-center top-[25%] bottom-[25%] left-[25%] right-[25%] fixed text-gray-800'>
                             <ul className='text-4xl text-center uppercase'>
                                 <Link href='/portfolio'>
-                                    <li className='mb-3'>PORTFOLIO</li>
+                                    <li className={currentPath === "/portfolio" ? 'underline mb-3' : 'mb-3'}>PORTFOLIO</li>
                                 </Link>
                                 <Link href='/projects'>
-                                    <li className='mb-3'>PROJECTS</li>
+                                    <li className={currentPath === "/projects" ? 'underline mb-3' : 'mb-3'}>PROJECTS</li>
                                 </Link>
                                 <Link href='/workshop'>
-                                    <li className='mb-3'>WORKSHOP</li>
+                                    <li className={currentPath === "/workshop" ? 'underline mb-3' : 'mb-3'}>WORKSHOP</li>
                                 </Link>
                                 <Link href='/about'>
-                                    <li className=''>ABOUT</li>
+                                    <li className={currentPath === "/about" ? 'underline' : ''}>ABOUT</li>
                                 </Link>
                             </ul>
                         </div>
