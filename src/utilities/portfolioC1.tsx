@@ -17,38 +17,20 @@ export default function PortfolioC1() {
   return (
     <div className="">
       {imageList.map((image, index) => {
-        if (index < 2) {
           return (
             <Image
               key={index}
               className="h-auto max-w-full mb-3 md:mb-14"
               placeholder="blur"
+              loading={index < 2 ? 'eager' : 'lazy'}
               src={image.default}
               style={{ width: '100%', height: 'auto' }}
               sizes="30vw"
-              width={0}
-              height={0}
               quality={100}
               alt=""
             />
           );
-        } else {
-          return (
-            <Image
-              key={index}
-              className="h-auto max-w-full mb-3 md:mb-14"
-              placeholder="blur"
-              loading="lazy"
-              src={image.default}
-              style={{ width: '100%', height: 'auto' }}
-              sizes="30vw"
-              width={0}
-              height={0}
-              quality={100}
-              alt=""
-            />
-          );
-        }
+          
       })}
     </div>
   );
