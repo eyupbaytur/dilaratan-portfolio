@@ -21,7 +21,7 @@ export default function Navbar() {
         <div className='sticky w-full h-20 z-[100] text-base text-gray-800 font-oswaldfont px-10 md:px-20 py-10 md:py-14'>
             <div>
                 <div className='flex justify-between items-center w-full h-full'>
-                    <Link href='/#Home'>
+                    <Link href='/'>
                         <ul className=' md:left-auto left-10 text-base uppercase '>DILARA TAN</ul>
                     </Link>
                 <div className='text-base uppercase flex justify-between items-center '>
@@ -56,7 +56,7 @@ export default function Navbar() {
                     <div className=''>
                         <div className='flex w-full items-center justify-between'>
                             <div>
-                                <Link href='/#Home'>
+                                <Link href='/'>
                                     <ul className='text-gray-800 text-base uppercase '>DILARA TAN</ul>
                                 </Link>
                             </div>
