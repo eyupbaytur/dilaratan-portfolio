@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 // Ensure correct path based on your project structure
-const imagesC1 = require.context("../../public/assets/portfolio-images/column1", true);
+const imagesC1 = require.context("../../public/assets/projects/kestane-mevsimi/c1", true);
 
 const sortedKeys = imagesC1.keys().sort((a, b) => {
   const numA = parseInt(a.match(/(\d+)/)?.[0] ?? '0');
