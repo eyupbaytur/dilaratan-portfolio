@@ -1,16 +1,19 @@
 import React from 'react';
-import Image from 'next/image';
-import PortfolioC1 from "@/utilities/portfolioC1";
-import PortfolioC2 from "@/utilities/portfolioC2";
+import C1 from "@/utilities/test";
+import C2 from "@/utilities/test";
 
-export default function PortfolioGallery() {
+interface C1Props {
+    imagePath: string[];
+  }
+
+export default function PortfolioGallery({ imagePath }) {
     return (
             <div className="grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-14 py-10 md:py-14 px-10 md:px-20">
                 <div className="grid-flow-row ">
-                    <PortfolioC1/>
+                    <C1 imagePath={imagePath} />
                 </div>
                 <div className="grid-flow-row gap-3 md:gap-14">
-                    <PortfolioC2/>
+                    <C2 imagePath={imagePath} />
                 </div>
             </div>
     )
