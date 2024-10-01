@@ -9,7 +9,7 @@ export default function Portfolio() {
       <Head>
         <title>Yağlı Güreş</title>
         <meta property="og:title" content="Yağlı Güreş | Dilara Tan" />
-        <meta property="og:image" content="/assets/yagligures/c1/1.jpg" />
+        <meta property="og:image" content="/assets/og-images/og-yagligures.jpg" />
         <link rel="icon" href="/favicon.ico"/>
       </Head>
       <div>

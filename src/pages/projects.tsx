@@ -10,7 +10,7 @@ export default function Projects() {
       <Head>
         <title>Projects</title>
         <meta property="og:title" content="PORTFOLIO | Dilara Tan" />
-        <meta property="og:image" content="/assets/og-image.png" />
+        <meta property="og:image" content="/assets/og-images/og-home.png" />
         <link rel="icon" href="/favicon.ico"/>
       </Head>
       <div>

@@ -9,7 +9,7 @@ export default function Abkhazia() {
       <Head>
         <title>Portfolio</title>
         <meta property="og:title" content="Abkhazia | Dilara Tan" />
-        <meta property="og:image" content="/assets/abkhazia/c1/4.jpg" />
+        <meta property="og:image" content="/assets/og-images/og-abkhazia.jpg" />
         <link rel="icon" href="/favicon.ico"/>
       </Head>
       <div>

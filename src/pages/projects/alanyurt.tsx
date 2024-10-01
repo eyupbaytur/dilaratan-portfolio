@@ -9,7 +9,7 @@ export default function Alanyurt() {
       <Head>
         <title>Alanyurt</title>
         <meta property="og:title" content="Alanyurt | Dilara Tan" />
-        <meta property="og:image" content="/assets/alanyurt/c1/2.jpg" />
+        <meta property="og:image" content="/assets/og-images/og-alanyurt.jpg" />
         <link rel="icon" href="/favicon.ico"/>
       </Head>
       <div>

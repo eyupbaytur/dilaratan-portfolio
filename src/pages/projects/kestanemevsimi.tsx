@@ -9,7 +9,7 @@ export default function Portfolio() {
       <Head>
         <title>Kestane Mevsimi</title>
         <meta property="og:title" content="Kestane Mevsimi | Dilara Tan" />
-        <meta property="og:image" content="/assets/kestanemevsimi/c1/2.jpg" />
+        <meta property="og:image" content="/assets/og-images/og-kestanemevsimi.jpg" />
         <link rel="icon" href="/favicon.ico"/>
       </Head>
       <div>
