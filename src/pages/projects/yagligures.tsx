@@ -1,5 +1,5 @@
 import Navbar from "@/components/navbar"
-import PortfolioGallery from "@/components/portfolioGallery"
+import PortfolioGallery from "@/utilities/yagligures/Gallery"
 import React from "react"
 import Head from 'next/head';
 
@@ -8,8 +8,8 @@ export default function Portfolio() {
     <div>
       <Head>
         <title>Yağlı Güreş</title>
-        <meta property="og:title" content="Kestane Mevsimi | Dilara Tan" />
-        <meta property="og:image" content="/assets/projects/yagligures/c1/3.png" />
+        <meta property="og:title" content="Yağlı Güreş | Dilara Tan" />
+        <meta property="og:image" content="/assets/yagligures/c1/1.jpg" />
         <link rel="icon" href="/favicon.ico"/>
       </Head>
       <div>

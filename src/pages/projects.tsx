@@ -1,7 +1,8 @@
 import React from "react"
 import Head from 'next/head';
+import Link from "next/link";
 import Navbar from "@/components/navbar";
-import ProjectsGallery from "@/components/projectsGallery";
+import Gallery from "@/utilities/projects/Gallery";
 
 export default function Projects() {
   return (
@@ -14,7 +15,7 @@ export default function Projects() {
       </Head>
       <div>
         <div><Navbar/></div>
-        <div><ProjectsGallery/></div>
+        <div><Gallery/></div>
       </div>
     </div>
   )

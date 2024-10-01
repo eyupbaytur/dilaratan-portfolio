@@ -1,22 +1,20 @@
 import Navbar from "@/components/navbar"
-import PortfolioGallery from "@/components/portfolioGallery"
+import Gallery from "@/utilities/abkhazia/Gallery";
 import React from "react"
 import Head from 'next/head';
 
-export default function Portfolio() {
-  const imagePathway = "/public/assets/projects/abkhazia/c1/";
-
+export default function Abkhazia() {
   return (
     <div>
       <Head>
-        <title>Abkhazia</title>
+        <title>Portfolio</title>
         <meta property="og:title" content="Abkhazia | Dilara Tan" />
-        <meta property="og:image" content="/assets/projects/abkhazia/c1/4.png" />
+        <meta property="og:image" content="/assets/abkhazia/c1/4.jpg" />
         <link rel="icon" href="/favicon.ico"/>
       </Head>
       <div>
         <div><Navbar/></div>
-        <div><PortfolioGallery imagePath={imagePathway} /></div>
+        <div><Gallery/></div>
       </div>
     </div>
   )
